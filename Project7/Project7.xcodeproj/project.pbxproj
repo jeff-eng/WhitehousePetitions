@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		957567791D3D5EB6007D1884 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957567781D3D5EB6007D1884 /* SwiftyJSON.swift */; };
 		95BC5E0A1D3D4454003F590D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC5E091D3D4454003F590D /* AppDelegate.swift */; };
 		95BC5E0C1D3D4454003F590D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC5E0B1D3D4454003F590D /* MasterViewController.swift */; };
 		95BC5E0E1D3D4454003F590D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC5E0D1D3D4454003F590D /* DetailViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		957567781D3D5EB6007D1884 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		95BC5E061D3D4454003F590D /* Project7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BC5E091D3D4454003F590D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BC5E0B1D3D4454003F590D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		95BC5E081D3D4454003F590D /* Project7 */ = {
 			isa = PBXGroup;
 			children = (
+				957567781D3D5EB6007D1884 /* SwiftyJSON.swift */,
 				95BC5E091D3D4454003F590D /* AppDelegate.swift */,
 				95BC5E0B1D3D4454003F590D /* MasterViewController.swift */,
 				95BC5E0D1D3D4454003F590D /* DetailViewController.swift */,
@@ -141,6 +144,7 @@
 				95BC5E0E1D3D4454003F590D /* DetailViewController.swift in Sources */,
 				95BC5E0C1D3D4454003F590D /* MasterViewController.swift in Sources */,
 				95BC5E0A1D3D4454003F590D /* AppDelegate.swift in Sources */,
+				957567791D3D5EB6007D1884 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,7 @@
 				95BC5E1C1D3D4454003F590D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
