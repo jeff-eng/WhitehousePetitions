@@ -24,7 +24,7 @@ class MasterViewController: UITableViewController {
                 let json = JSON(data: data)
                 
                 if json["metadata"]["responseInfo"]["status"].intValue == 200 {
-                    //we're OK to parse!
+                    parseJSON(json)
                 }
             }
         }
@@ -80,7 +80,8 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         let object = objects[indexPath.row]
-        cell.textLabel!.text = object.description
+        cell.textLabel!.text = object["title"]
+        cell.detailTextLabel!.text = object["body"]
         return cell
     }
 
