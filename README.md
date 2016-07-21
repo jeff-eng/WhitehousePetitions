@@ -15,7 +15,22 @@ The second part of this project follows Project 9: Grand Central Dispatch at www
 ## Concepts Learned/Practiced in Project 9
 * Grand Central Dispatch(GCD) framework
   * ```dispatch_async()``` method
+* Closures - used in concert with the ```dispatch_async``` to wrap code that is to be executed asynchronously on background queues.
+* Four background queues (in order of highest to lowest priority):
+  1. User interactive queue
+  2. User initiated queue
+  3. Utility queue
+  4. Background queue
+* Using ```[unowned self] in``` to avoid strong reference cycles
+  * Example from project:
 
+  ```
+  dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) { [unowned self] in
+
+    //code wrapped within this closure...
+    
+  }
+  ```
 ## Attributions
 * [Project 7: Whitehouse Petitions: JSON and NSData @ www.hackingwithswift.com](https://www.hackingwithswift.com/read/7/overview)
 * [Project 9: Grand Central Dispatch @ www.hackingwithswift.com](https://www.hackingwithswift.com/read/9/overview)
